@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+body {
+    background: #2C3A47;
+}
+
+nav h1, .updateNumberDiv h2 {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem 0;
+}
+
+nav h1 {
+    letter-spacing: 0.1rem;
+    font-size: 55px; 
+}
+
+.counterGame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.updateNumberDiv h2 {
+    font-size: 85px;
+}
+
+.updateBtn {
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.updateBtn button {
+    color: #FFFFFF;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    font-size: 25px;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+
+/* Responsive Page */
+@media only screen and (max-width: 962px) {
+    .updateBtn button {
+        margin: 0.5rem 1rem;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .updateBtn button {
+        margin: 0.5rem 0.5rem;
+    }
+}
+@media only screen and (max-width: 674px) {
+    .updateBtn button {
+        padding: 0.3rem 1rem;
+    }
+}
+@media only screen and (max-width: 482px) {
+    nav h1 {
+        font-size: 41px;
+    }
+    .updateNumberDiv h2 {
+        font-size: 67px;
+    }
+}
